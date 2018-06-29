@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>长亭短亭 | Today is the first day of the rest of you life!</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="##Java中的字符串##本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+###字符串常量池###字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="长亭短亭 | Today is the first day of the rest of you life!">
+    <meta name="twitter:description" content="##Java中的字符串##本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+###字符串常量池###字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="长亭短亭 | Today is the first day of the rest of you life!">
+    <meta property="og:description" content="##Java中的字符串##本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+###字符串常量池###字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了">
+
+    
+    <meta name="author" content="Tao Huang">
+    
+    <link rel="stylesheet" href="/ht930813.github.io/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar-small.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="长亭短亭" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://ht930813.github.io/2018/06/25/字符串/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/ht930813.github.io/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/ht930813.github.io/" title="前往 长亭短亭 的主页"><img src="/images/portrait.png" width="80" alt="长亭短亭 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/ht930813.github.io/" title="link to homepage for 长亭短亭">长亭短亭</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Today is the first day of the rest of you life!</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/aboutme">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/monniya" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  <li class="navigation__item">
+    <a href="https://twitter.com/onlymonniya" title="Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+  <li class="navigation__item">
+    <a href="mailto:ht930813@outlook.com" title="Mail" target="_blank">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-06-25T05:14:00.022Z" class="post-list__meta--date date">2018-06-25</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <p>##Java中的字符串##<br>本质为常量字符数组<code>private final char value[];</code><br>String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象</p>
+<p>###字符串常量池###<br>字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：<strong>使用字符串常量池</strong>，<font color="red">每当我们创建字符串常量时，JVM会首先检查字符串常量池，如果该字符串已经存在常量池中，那么就直接返回常量池中的实例引用。如果字符串不存在常量池中，就会实例化该字符串并且将其放到常量池中。</font><font color="green">由于String字符串的不可变性我们可以十分肯定常量池中一定不存在两个相同的字符串。</font><br>Java中的常量池，分为两种形态：静态常量池与运行时常量池</p>
+<ul>
+<li><strong>静态常量池：</strong>界.class文件中的常量池，class文件中的常量不仅仅包含字符串/数字字面量，还包含类、方法的信息。这些占用class文件绝大部分空间。</li>
+<li><strong>运行时常量池:</strong>即JVM在完成类的装载操作之后，将class文件中的常量池载入到内存中，并保存在方法区。（即为方法区中的运行时常量池）<br>对于String类型，方法区有一张固定长度的CONSTANT_String_info表用来存储文字字符串值。<font color="red">常量池中保存着很多String对象; 并且可以被共享使用，因此它提高了效率</font><br><code>String c=new String(&quot;aaa&quot;。);</code>采用new关键字新建一个对象时，JVM首先去字符串常量查找有无此串。若有：则不在常量池创建此串，直接在堆中创建一个”aaa”对象，然后把此对象的地址返给引用c；若无：首先在字符串常量池中创建此串对象，然后再堆中创建此串对象，最后把堆中此串对象的地址返给引用c。<br><font color="purple">字符串的引用若在编译时无法确定，则在堆中创建此对象，并把此对象的地址返给此引用</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void test4()&#123;  </span><br><span class="line">    String s0=&quot;helloworld&quot;;   </span><br><span class="line">    String s1=new String(&quot;helloworld&quot;);   </span><br><span class="line">    String s2=&quot;hello&quot; + new String(&quot;world&quot;);   </span><br><span class="line">    System.out.println(&quot;===========test4============&quot;);  </span><br><span class="line">    System.out.println( s0==s1 ); //false    </span><br><span class="line">    System.out.println( s0==s2 ); //false   </span><br><span class="line">    System.out.println( s1==s2 ); //false  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>new String()不能再编译时期确定，new String() 创建的字符串指向的时堆内存的对象中，它们有自己的地址空间。s2因为有后半部分new String(”world”)所以也无法在编译期确定，所以也是一个新创建对象”helloworld”的引用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public void test5()&#123;  </span><br><span class="line">    String str1=&quot;abc&quot;;     </span><br><span class="line">    String str2=&quot;def&quot;;     </span><br><span class="line">    String str3=str1+str2;  </span><br><span class="line">    System.out.println(&quot;===========test5============&quot;);  </span><br><span class="line">    System.out.println(str3==&quot;abcdef&quot;); //false  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>JVM对String str=”abc”对象放在常量池中是在编译时做的，而String str3=str1+str2是在运行时刻才能知道的。<font color="orange">str1 + str2首先以最左边的字符串为参数创建StringBuilder对象，然后依次对右边进行append操作，最后将StringBuilder的最后一步toString()方法还原一个新的String对象”abcdef”，因此堆中开辟一块空间存放此对象。</font></p>
+<p>在程序编译时期，JVM会把字面字符串的”+”连接优化为连接后的值，即编译时期就确定字符串常量的值。(为了避免创建多余的字符串对象而做的优化)，而上述的<code>str1+str2</code>效率要比直接字面字符串相加低，故编译器不会对引用变量进行优化。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">public void test9()&#123;  </span><br><span class="line">    String s0 = &quot;ab&quot;;   </span><br><span class="line">    final String s1 = &quot;b&quot;;   </span><br><span class="line">    String s2 = &quot;a&quot; + s1;    </span><br><span class="line">    System.out.println(&quot;===========test9============&quot;);  </span><br><span class="line">    System.out.println((s0 == s2)); //result = true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>对于final修饰的变量，它在编译时被解析为常量值的一个本地拷贝存储到自己的常量池中或嵌入到它的字节码流中。所以此时的”a” + s1和”a” + “b”效果是一样的。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public void test10()&#123;  </span><br><span class="line">    String s0 = &quot;ab&quot;;   </span><br><span class="line">    final String s1 = getS1();   </span><br><span class="line">    String s2 = &quot;a&quot; + s1;   </span><br><span class="line">    System.out.println(&quot;===========test10============&quot;);  </span><br><span class="line">    System.out.println((s0 == s2)); //result = false        </span><br><span class="line">&#125;  </span><br><span class="line">private static String getS1() &#123;    </span><br><span class="line">    return &quot;b&quot;;     </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里面虽然将s1用final修饰了，但是由于其赋值是通过方法调用返回的，那么它的值只能在运行期间确定，因此s0和s2指向的不是同一个对象<br><strong>String不可变的深入剖析:</strong><code>private final char value[];</code>仅靠private和final是根本没有办法保证String不可变，因为final修饰的只是value，即value不可变，而value本质只是一个指向对内存的地址，但是value所指向堆内存的对象的内容是可以改变的。<font color="red">因此最关键的是，还需要String内部的方法都不能对value数组进行直接修改，都要拷贝到新的char[]数组 或者 直接new 新的String对象</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">final StringBuffer a = new StringBuffer(&quot;111&quot;);</span><br><span class="line">final StringBuffer b = new StringBuffer(&quot;222&quot;);</span><br><span class="line">a=b;//此句编译不通过</span><br><span class="line"></span><br><span class="line">final StringBuffer a = new StringBuffer(&quot;111&quot;);</span><br><span class="line">a.append(&quot;222&quot;);//编译通过</span><br></pre></td></tr></table></figure></p>
+<p>final只对引用的”值”(即内存地址)有效，它迫使引用只能指向初始指向的那个对象，改变它的指向会导致编译期错误。至于它所指向的对象的变化，final是不负责的。</p>
+<p>###String.intern()###<br>当调用 intern方法时，如果池已经包含一个等于此String对象的字符串（用equals(oject)方法确定。<font color="orange">对于任意两个字符串 s 和 t，当且仅当 s.equals(t) 为 true 时，s.intern() == t.intern() 才为 true</font>），则返回池中的字符串。否则，将此String对象添加到池中，并返回此String对象的引用。</p>
+<font color="orange">存在于.class文件中的常量池，在运行期间被jvm装载，并且可以扩充。String的intern()方法就是扩充常量池的一个方法；</font>当一个String实例str调用intern()方法时，java查找常量池中是否有相同unicode的字符串常量，如果有，则返回其引用，如果没有，则在常量池中增加一个unicode等于str的字符串并返回它的引用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">public void test11()&#123;</span><br><span class="line">    String s0 = &quot;kvill&quot;; </span><br><span class="line">    String s1 = new String(&quot;kvill&quot;); </span><br><span class="line">    String s2 = new String(&quot;kvill&quot;); </span><br><span class="line">    System.out.println(&quot;===========test11============&quot;);</span><br><span class="line">    System.out.println( s0 == s1 ); //false</span><br><span class="line">    System.out.println( &quot;**********&quot; ); </span><br><span class="line">    s1.intern(); //虽然执行了s1.intern(),但它的返回值没有赋给s1</span><br><span class="line">    s2 = s2.intern(); //把常量池中&quot;kvill&quot;的引用赋给s2 </span><br><span class="line">    System.out.println( s0 == s1); //flase</span><br><span class="line">    System.out.println( s0 == s1.intern() ); //true//说明s1.intern()返回的是常量池中&quot;kvill&quot;的引用</span><br><span class="line">    System.out.println( s0 == s2 ); //true</span><br></pre></td></tr></table></figure><br><br><strong>String采用连接运算符”+”效率低下原因分析:</strong>每做一次 + 就产生个StringBuilder对象，最后将StringBuilder的最后一步toString()方法还原一个新的String对象。下次循环再到达时重新产生个StringBuilder对象，然后 append 字符串，最后将StringBuilder的最后一步toString()方法还原一个新的String对象,如此循环直至结束。<font color="red">如果我们直接采用 StringBuilder 对象进行 append 的话，我们可以节省 N - 1 次创建和销毁对象的时间。所以对于在循环中要进行字符串连接的应用，一般都是用StringBuffer或StringBulider对象来进行append操作。</font>
+
+<p><strong>String、StringBuffer、StringBuilder的区别</strong></p>
+<ul>
+<li><strong>可变与不可变：</strong>String是不可变字符串对象，StringBuilder和StringBuffer是可变字符串对象（其内部的字符数组长度可变）</li>
+<li><strong>线程是否安全：</strong>String中的对象是不可变的，也就可以理解为常量，显然线程安全。StringBuffer 与 StringBuilder 中的方法和功能完全是等价的，只是StringBuffer 中的方法大都采用了synchronized 关键字进行修饰，因此是线程安全的，而 StringBuilder 没有这个修饰，可以被认为是非线程安全的。</li>
+<li><strong>执行效率：</strong>StringBuilder &gt; StringBuffer &gt; String 当然这个是相对的。这三个类是各有利弊，应当根据不同的情况来进行选择使用：<ul>
+<li>当字符串相加操作或者改动较少的情况下，建议使用 String str=”hello”这种形式；</li>
+<li>当字符串相加操作较多的情况下，建议使用StringBuilder，如果采用了多线程，则使用StringBuffer。</li>
+</ul>
+</li>
+</ul>
+<p><strong>关于String str = new String(“abc”)创建了多少个对象:</strong>在类加载过程中，在运行时的常量池中创建了”abc”对象，而在代码运行期间在堆创建了一个”abc”对象。<br><strong>字符串池的优缺点：</strong>避免了相同内容的字符串的创建，节省了内存，省去了创建相同字符串的时间，同时提升了性能；另一方面，字符串池的缺点就是牺牲了JVM在常量池中遍历对象所需要的时间，不过其时间成本相比而言比较低。</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/ht930813.github.io/2018/06/25/排序算法/" title=""></a></h2>
+                <p class="excerpt">
+                
+                
+深入理解排序算法###1. 冒泡排序思想：一种排队的方法，每一轮比较相邻两个数的大小，若前者大于后者，则发生交换。例如第一轮完成之后，最大数出现在最后位置。重复此过程，从而得到有序的数组。冒泡法需要比较的次数为:(n-1) + (n-2) + ... + 1 = n*(n-1)/2，因此时间复杂度
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-06-25T11:05:57.430Z" class="post-list__meta--date date">2018-06-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/ht930813.github.io/2018/06/25/排序算法/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Older Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/ht930813.github.io/2018/06/25/面试心得/" title=""></a></h2>
+                <p class="excerpt">
+                
+                ##面试心得##
+###心态（非常重要）###找工作之前，有一点你必须清楚，就是找工作是一件看缘分的事情，不是你很牛逼，你就一定能进你想进的公司，都是有一个概率在那。如果你基础好，项目经验足，同时准备充分，那么你拿到offer的概率就会比较高；相反，如果你准备不充分，基础也不好，那么你拿到offer
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-06-25T05:14:00.008Z" class="post-list__meta--date date">2018-06-25</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/ht930813.github.io/2018/06/25/面试心得/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 Tao Huang - 本站点采用 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a href="http://hexo.io">Hexo</a> 搭建，使用 <a href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
