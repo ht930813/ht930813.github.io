@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
-    <title>长亭短亭 | Today is the first day of the rest of you life!</title>
+    <title>Java中的字符串 | 长亭短亭</title>
     <meta name="renderer" content="webkit">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -12,18 +12,18 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta name="description" content="Java中的字符串本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
-字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常">
+    <meta name="description" content="本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常量池，每当我们创建字">
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="长亭短亭 | Today is the first day of the rest of you life!">
-    <meta name="twitter:description" content="Java中的字符串本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
-字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常">
+    <meta name="twitter:title" content="Java中的字符串 | 长亭短亭">
+    <meta name="twitter:description" content="本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常量池，每当我们创建字">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="长亭短亭 | Today is the first day of the rest of you life!">
-    <meta property="og:description" content="Java中的字符串本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
-字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常">
+    <meta property="og:title" content="Java中的字符串 | 长亭短亭">
+    <meta property="og:description" content="本质为常量字符数组private final char value[];String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象
+字符串常量池字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：使用字符串常量池，每当我们创建字">
 
     
     <meta name="author" content="Tao Huang">
@@ -59,7 +59,7 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-        <a href="/ht930813.github.io/" title="前往 长亭短亭 的主页"><img src="/images/portrait.png" width="80" alt="长亭短亭 logo" class="panel-cover__logo logo" /></a>
+        <a href="/ht930813.github.io/" title="前往 长亭短亭 的主页"><img src="/images/portrait.PNG" width="80" alt="长亭短亭 logo" class="panel-cover__logo logo" /></a>
         <h1 class="panel-cover__title panel-title"><a href="/ht930813.github.io/" title="link to homepage for 长亭短亭">长亭短亭</a></h1>
         
         <span class="panel-cover__subtitle panel-subtitle">Today is the first day of the rest of you life!</span>
@@ -164,12 +164,11 @@
       </span> 
    
     </div>
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">Java中的字符串</h1>
   </header>
 
   <section class="post">
-    <hr>
-<h2 id="Java中的字符串"><a href="#Java中的字符串" class="headerlink" title="Java中的字符串"></a>Java中的字符串</h2><p>本质为常量字符数组<code>private final char value[];</code><br>String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象</p>
+    <p>本质为常量字符数组<code>private final char value[];</code><br>String对象一旦被创建就是固定不变的了，对String对象的任何改变都不影响到原对象，相关的任何change操作都会生成新的对象</p>
 <h3 id="字符串常量池"><a href="#字符串常量池" class="headerlink" title="字符串常量池"></a>字符串常量池</h3><p>字符串分配与其它对象分配一样，需要消耗时间和空间，而且字符串是我们使用非常多的。故JVM为了提高性能和减少内存的开销，在实例化字符串的时候进行了优化：<strong>使用字符串常量池</strong>，<font color="red">每当我们创建字符串常量时，JVM会首先检查字符串常量池，如果该字符串已经存在常量池中，那么就直接返回常量池中的实例引用。如果字符串不存在常量池中，就会实例化该字符串并且将其放到常量池中。</font><font color="green">由于String字符串的不可变性我们可以十分肯定常量池中一定不存在两个相同的字符串。</font><br>Java中的常量池，分为两种形态：静态常量池与运行时常量池</p>
 <ul>
 <li><strong>静态常量池：</strong>界.class文件中的常量池，class文件中的常量不仅仅包含字符串/数字字面量，还包含类、方法的信息。这些占用class文件绝大部分空间。</li>
